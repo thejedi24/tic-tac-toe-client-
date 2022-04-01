@@ -128,3 +128,101 @@ Developers should run these often!
 1. All content is licensed under a CC­BY­NC­SA 4.0 license.
 1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
+Authentication
+<form>
+  <input name="credentials[email]" type="text" value="an@example.email">
+  <input name="credentials[password]" type="password" value="an example password">
+  <input name="credentials[password_confirmation]" type="password" value="an example password">
+</form>
+Authorization: Bearer <token>
+<form>
+  <input name="credentials[email]" type="text" value="an@example.email">
+  <input name="credentials[password]" type="password" value="an example password">
+</form>
+
+<form>
+  <input name="passwords[old]" type="password">
+  <input name="passwords[new]" type="password">
+</form>
+
+Create New Game
+<button type="button">New game !</button>
+{
+  "game": {
+    "cells": ["","","","","","","","",""],
+    "over": false,
+    "_id": "5e823ba98929cc4e95e2f5d9",
+    "owner": "5e82311c8929cc4e95e2f5d8",
+    "createdAt": "2020-03-30T18:34:17.772Z",
+    "updatedAt": "2020-03-30T18:34:17.772Z",
+    "__v": 0
+  }
+}
+
+
+uthorization: Bearer <token> post game 
+{
+  "games": [
+    {
+      "cells": ["","","","","","","","",""],
+      "over": false,
+      "_id": "5e823ba98929cc4e95e2f5d9",
+      "owner": "5e82311c8929cc4e95e2f5d8",
+      "createdAt": "2020-03-30T17:30:10.371Z",
+      "updatedAt": "2020-03-30T16:34:27.782Z",
+      "__v": 0
+    },
+    {
+      "cells": ["x","","","o","","","","",""],
+      "over": false,
+      "_id": "5ed7e519659863c00ff4907e",
+      "owner": "5e82311c8929cc4e95e2f5d8",
+      "createdAt": "2020-03-30T16:34:17.792Z",
+      "updatedAt": "2020-03-30T18:37:30.232Z",
+      "__v": 0
+    },
+    {
+      "cells": ["","o","","","x","o","","x",""],
+      "over": false,
+      "_id": "5ed7e526cf104aa275b3ef17",
+      "owner": "5e82311c8929cc4e95e2f5d8",
+      "createdAt": "2020-03-30T15:24:21.743Z",
+      "updatedAt": "2020-03-30T18:39:43.382Z",
+      "__v": 0
+    }
+  ]
+}
+update game 
+<div data-cell-index='0'>
+</div>
+{
+    update response 
+  "game": {
+    "cells": ["x","","","","","","","",""],
+    "over": false,
+    "_id": "5e823ba98929cc4e95e2f5d9",
+    "owner": "5e82311c8929cc4e95e2f5d8",
+    "createdAt": "2020-03-30T18:34:17.772Z",
+    "updatedAt": "2020-03-30T18:46:41.383Z",
+    "__v": 1
+  }
+}
+update request
+{
+  "game": {
+    "cell": {
+      "index": 0,
+      "value": "x"
+    },
+    "over": false
+  }
+}
+user stories 
+As a user I want to sign in/up
+As a user I want to start a new game  < resource >
+As a user I want to restart the game < resources >
+As a user I want to Update the game < resource > 
+As a user I want to Delete the game  < resource > 
+the app is a basic tic tak toe game with basic board with 9 squares 
+sign up sign in play now restart button. 
+wire frame https://whimsical.com/tik-tak-toe-KajLBtvUYvjbWdPBc52mxr
