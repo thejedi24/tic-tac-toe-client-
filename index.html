@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>Browser Template</h1>
+      <main class="background">
+  <section class="board">
+    <h1>Tic Tac Toe</h1>
+    <form id="sign-up">
+        <h2>Sign up for TicTacToe</h2>
+        <input name="credentials[email]" type="email" placeholder="example@google.com">
+        <input name="credentials[password]" type="password" placeholder="Password">
+        <input name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
+        <input type="submit" value="Sign up">
+    </form>
+        <form id="sign-in">
+            <legend>Sign in</legend>
+            <input name="credentials[email]" type="email" placeholder="example@google.com">
+            <input name="credentials[password]" type="password" placeholder="Password">
+            <input type="submit" value="Sign in">
+        </form>
+  </section>
+  <section class="display">
+    Player class="display-player playerX" X turn
+  </section>
+  <section class="container">
+    <div class="tile">title 1</div>
+    <div class="tile">tile 2</div>
+    <div class="tile">tile 3</div>
+    <div class="tile">tile 4</div>
+    <div class="tile">tile 5</div>
+    <div class="tile">tile 6</div>
+    <div class="tile">tile 7</div>
+    <div class="tile">tile 8</div>
+    <div class="tile">"tile 9"</div>
+  </section>
+  <h2 id="game-over-text">Winner is X</h2>
+  <h2 id="game-over-text">tie x and o </h2>
+  <button id="play again">play again</button>
+  <form  id="sign_out">
+
+    <h2>Sign out</h2>
+    <input type="submit" value="Sign out"> </form>
+</main>
+
+    </body>
+</html>
